@@ -1,13 +1,14 @@
-var mongoose = require('mongoose');
+// var mongoose = require('mongoose');
+// var Flight = require('./flight')
 
-//create schema
+// //create schema
 
-var TerminalSchema = new mongoose.Schema ({
-  name: String,
-  flights:[FlightSchema],
-  capacity: Number
-})
+// var TerminalSchema = new mongoose.Schema ({
+//   name: String,
+//   flight:[Flight],
+//   capacity: Number
+// })
 
-var Terminal = mongoose.model('Terminal', TerminalSchema)
+// var Terminal = mongoose.model('Terminal', TerminalSchema)
 
-module.exports = Terminal;
+// module.exports = Terminal;

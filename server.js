@@ -10,18 +10,32 @@ app.use( bodyParser.urlencoded({extended: false}) );
 
 mongoose.connect("mongodb://localhost/weekend-flights");
 
-var Flight = require('./models/flight')
+var Flight = require('./models/flight');
+var Airport = require('./models/airport');
 
 var flight1 = new Flight({
   from: 'CDG France',
-  to: 'JFK New-York',
-  airline: 'American Airlines'
+  to: 'JFK New-York, USA',
+  airline: 'American Airlines',
+  passengers: 0
 })
 
-flight1.save();
-// - Hard code the following data in `server.js`:
+var flight2 = new Flight({
+  from: 'Heathrow UK',
+  to: 'JFK New-York, USA',
+  airline: 'British Airways',
+  passengers: 0
+})
 
-//   - A flight from CDG France to JFK New-York, USA on American Airlines with no passengers.  The name of the flight is "flight1"
-//   - A second flight from Heathrow UK to JFK New-York, USA on British Airways with no passengers.  The name of the flight is "flight2"
+// flight1.save();
+// flight2.save();
+
+var JFK = new Airport({
+  name: 'JFK',
+  country: 'USA',
+  opened: '1990-4-20'
+})
+
+JFK.save();
 //   - An airport called "JFK" in the USA opened on a random date in 1990.
 //   - A terminal called "Terminal 1" `pushed` to airport1 with a capacity of 234324 and two flights: flight1 and flight2

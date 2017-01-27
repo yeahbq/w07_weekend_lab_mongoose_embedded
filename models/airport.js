@@ -11,5 +11,6 @@ var AirportSchema = new mongoose.Schema ({
   opened: Date
 })
 
-var Airport = mongoose.model('Airport', AirportSchema)
+var Airport = mongoose.model('Airport', AirportSchema);
+module.exports = Airport;
 
