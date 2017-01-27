@@ -1,0 +1,20 @@
+{
+  "name": "w07_weekend_lab_mongoose_embedded",
+  "version": "1.0.0",
+  "description": "## Introduction",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeahbq/w07_weekend_lab_mongoose_embedded.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yeahbq/w07_weekend_lab_mongoose_embedded/issues"
+  },
+  "homepage": "https://github.com/yeahbq/w07_weekend_lab_mongoose_embedded#readme"
+}
